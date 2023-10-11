@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <title>
+    Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="nav-section">
+    <nav>
+      <div class="nav-logo">
+        <img src="./assets/flipkart-logo.png" alt="Flipkart-logo">
+        <a href="">
+          Explore
+          <span>Plus</span>
+          <img src="./assets/plus.png" alt="">
+        </a>
+      </div>
+
+      <div class="nav-search">
+        <input class="search-input" type="text" placeholder="Search for products, brand and more">
+        <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="menu">
+        <button class="btn-login">Login</button>
+        <a class="btn-seller" href="">Become a Seller</a>
+        <a class="btn-more" href="">More <span><i class="fa-solid fa-chevron-down"></i></span></a>
+        <a class="btn-cart" href=""><span><i class="fa-solid fa-cart-shopping"></i></span> Cart</a>
+      </div>
+
+      <div onclick="toggleMenuBar()" id="bars" class="menu-bars"><i id="burger" class="fa-solid fa-bars"></i></div>
+    </nav>
+  </section>
+
+  <div id="toggle-menu" class="toggle-menu">
+    <ul>
+      <li><a href="">Login</a></li>
+      <li><a href="">Become a Seller</a></li>
+      <li><a href="">More</a></li>
+      <li><a href="">Cart</a></li>
+    </ul>
+  </div>
+  <!-- END OF NAVBAR -->
+
+  <section class="top-category-section">
+    <div class="top-categories">
+      <div class="top-catgory">
+        <img src="./assets/category/cat1.webp" alt="Grocery">
+        <span>Grocery</span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat2.webp" alt="Grocery">
+        <span>Mobile</span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat3.webp" alt="Grocery">
+        <span>Fashion <i class="fa-solid fa-chevron-down"></i></span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat4.webp" alt="Grocery">
+        <span>Electronics <i class="fa-solid fa-chevron-down"></i></span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat5.webp" alt="Grocery">
+        <span>Home & Furniture <i class="fa-solid fa-chevron-down"></i></span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat6.webp" alt="Grocery">
+        <span>Appliances</span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat7.webp" alt="Grocery">
+        <span>Travel</span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat8.webp" alt="Grocery">
+        <span>Top Offers</span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat9.webp" alt="Grocery">
+        <span>Beaty, Toys & More <i class="fa-solid fa-chevron-down"></i></span>
+      </div>
+
+      <div class="top-catgory">
+        <img src="./assets/category/cat10.webp" alt="Grocery">
+        <span>Two Wheelers</span>
+      </div>
+    </div>
+  </section>
+  <!-- ----------- End OF Top Categories ------------------ -->
+
+  <section class="slider-section">
+    <div class="slider-container">
+      <span class="slider-btn left" onclick="manualImageSlider('previous')"><i
+          class="fa-solid fa-chevron-left"></i></span>
+      <div class="slider-images">
+        <img class="image" id="image" src="./assets/banner/banner1.png" alt="banner">
+      </div>
+      <span class="slider-btn right" onclick="manualImageSlider('next')"><i
+          class="fa-solid fa-chevron-right"></i></span>
+    </div>
+  </section>
+  <!-- ------------ End of Image Slider -------------- -->
+
+  <div class="discount">
+    <img src="./assets/discount.jpg" alt="">
+  </div>
+  <!-- ------- End of discount -------- -->
+
+  <section class="top-offers-section">
+    <div class="top-offers-container">
+
+      <div class="left-side">
+        <h3>Top Offers</h3>
+        <button class="btn btn-primary">VIEW ALL</button>
+      </div>
+
+      <div class="right-side">
+
+        <span id="leftBtn" class="slider-btn left disable" onclick="productsSlider('left')"><i
+            class="fa-solid fa-chevron-left"></i></span>
+
+        <div class="product-cards">
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="./assets/products/mobile2.jpeg" alt="">
+            <div class="product-detail">
+              <p class="title">Samsung Galaxy S21 FE 5G</p>
+              <p class="detail-1">incl of offers</p>
+              <p class="detail-2">starts from &#8377;29,999*</p>
+            </div>
+          </div>
+
+        </div>
+
+        <span id="rightBtn" class="slider-btn right" onclick="productsSlider('right')"><i
+            class="fa-solid fa-chevron-right"></i></span>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ----- End of Top Offers --------- -->
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-left">
+        <div class="seperate">
+          <div class="about-menu">
+            <p>ABOUT</p>
+            <ul>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Flipkart Stories</li>
+              <li>Press</li>
+              <li>Corporate Information</li>
+            </ul>
+          </div>
+
+          <div class="help-menu">
+            <p>HELP</p>
+            <ul>
+              <li>Payments</li>
+              <li>Shipping</li>
+              <li>Cancellation & Retuns</li>
+              <li>FAQ</li>
+              <li>Rport Infringement</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="seperate">
+          <div class="policy-menu">
+            <p>CONSUMER POLICY</p>
+            <ul>
+              <li>Cancellation & Retuns</li>
+              <li>Terms of Use</li>
+              <li>Security</li>
+              <li>Privacy</li>
+              <li>Sitemap</li>
+              <li>Grievance Redressal</li>
+              <li>EPR Compilance</li>
+            </ul>
+          </div>
+
+          <div class="social-menu">
+            <p>SOCIAL</p>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+        <div class="mail-address">
+          <p>Mail Us:</p>
+          <p>
+            Flipkart Internate Private Limited,<br>
+            Buildings Alyssa, Begonia & <br>
+            Clove Embassy Tech Village, <br>
+            Outer Ring Road, Devarabeesanahalli Village,<br>
+            Bengaluru, 560103,<br>
+            Karnataka, India
+          </p>
+        </div>
+
+        <div class="office-address">
+          <p>Registered Office Address:</p>
+          <p>
+            Flipkart Internate Private Limited,<br>
+            Buildings Alyssa, Begonia & <br>
+            Clove Embassy Tech Village, <br>
+            Outer Ring Road, Devarabeesanahalli Village,<br>
+            Bengaluru, 560103,<br>
+            Karnataka, India <br>
+            Telephone: <br> <span>044-86548524</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; flipkartclone - All Rights Reserved 2023</p>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
